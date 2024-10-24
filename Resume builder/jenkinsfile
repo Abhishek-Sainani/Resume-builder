@@ -26,7 +26,7 @@ pipeline {
         stage('Docker Run') {
             steps {
                 script {
-                    bat "docker run -d -p 5173:5173 Resume builder:latest"
+                    bat "docker run -d -p 6000:6000 Resume builder:latest"
                 }
             }
         }
